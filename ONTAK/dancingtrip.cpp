@@ -167,19 +167,23 @@ int main(){
         G[a].push_back(b);
         G[b].push_back(a);}
 
+    if (k==1){
+        while (q--){
+            int x;
+            cin>>x;
+            cout<<"YES\n";  }
+        return 0; }
+
+
+
     policz(1);
 
 
     while (q--){
         int x;
         cin>>x;
-        if (k==1 )
-			cout<<"YES\n";
-		else {
-
-
         if (odpowiedz[x])
             cout<<"YES\n";
         else
-            cout<<"NO\n"; } }
+            cout<<"NO\n";}
 }
